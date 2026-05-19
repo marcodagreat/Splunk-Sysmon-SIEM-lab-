@@ -319,11 +319,11 @@ This phase establishes the foundation for:
 
 ## Lessons Learned
 
-- Improved understanding of endpoint telemetry collection across Windows and Linux systems
-- Learned how Sysmon enhances visibility into process and network activity
-- Strengthened troubleshooting skills while validating Splunk Universal Forwarder connectivity
-- Gained experience working with centralized logging and SIEM workflows
-- Better understood how enterprise SOC environments monitor distributed endpoints
+- Learned how centralized logging improves visibility across segmented environments
+- Improved troubleshooting skills while validating endpoint-to-SIEM connectivity
+- Gained hands-on experience configuring Sysmon telemetry collection
+- Better understood differences between Windows event logs and Linux syslog monitoring
+- Learned how enterprise SOC environments centralize endpoint telemetry for detection engineering
   
   ---
   
