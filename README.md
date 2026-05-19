@@ -55,6 +55,7 @@ Windows Server 2022 configured as the Active Directory Domain Controller for the
 
 <img width="1462" height="822" alt="Active Directory- Server Manager overview" src="https://github.com/user-attachments/assets/4a755abf-d811-4672-acf3-cbafa379b163" />
 
+*Figure: Active Directory Server Manager Overview*
 
 ---
 
@@ -64,6 +65,7 @@ Created multiple Active Directory users to simulate a real enterprise environmen
 
 <img width="1462" height="822" alt="Active Directory User creation" src="https://github.com/user-attachments/assets/9c67615e-35da-47d6-bdd1-04a8b1a22fe2" />
 
+*Figure: Active Directory User creation*
 
 ---
 
@@ -75,6 +77,7 @@ Validated that the Splunk Universal Forwarder service was successfully installed
 
 <img width="1462" height="822" alt="Verifying splunk forwarder" src="https://github.com/user-attachments/assets/89c33e45-4cc3-497e-8561-6bdcbbeeef1c" />
 
+*Figure: Validate Splunk Universal Forwarder was insalled and running*
 
 ---
 
@@ -84,6 +87,7 @@ Verified that Sysmon was successfully installed and configured as a persistent W
 
 <img width="1462" height="822" alt="Verifying sysmon telemetry" src="https://github.com/user-attachments/assets/6815d3b0-b206-44e4-90a4-15041f2b0ca5" />
 
+*Figure: Validate sysmon was installed and running*
 
 ---
 
@@ -100,6 +104,7 @@ Telemetry was forwarded into the `endpoint` index for centralized analysis.
 
 <img width="1462" height="822" alt="Input config file splunk forwarder" src="https://github.com/user-attachments/assets/2bce926e-e71a-4e3b-a3fe-dd91a6d317c3" />
 
+*Figure: Splunk inputs.conf file*
 
 ---
 
@@ -118,6 +123,7 @@ This telemetry is critical for detecting malware execution and suspicious proces
 
 <img width="1462" height="822" alt="sysmon-eventid1-process" src="https://github.com/user-attachments/assets/a54b0483-46a8-45ae-9734-0b7dc4022600" />
 
+*Figure: sysmon eventid1 process*
 
 ---
 
@@ -132,6 +138,7 @@ Validated DNS query monitoring through Sysmon Event ID 22. This telemetry helps 
 
   <img width="1462" height="822" alt="sysmon-eventid22 process" src="https://github.com/user-attachments/assets/816317ae-214a-4ff7-9b55-83f353d62776" />
 
+*Figure: sysmon eventid22 process*
 
 ---
 
@@ -140,6 +147,8 @@ Validated DNS query monitoring through Sysmon Event ID 22. This telemetry helps 
 Validated network connection telemetry using Sysmon Event ID 3. This event provides visibility into outbound network communications initiated by processes on the endpoint.
 
 <img width="1462" height="822" alt="sysmon-eventid3 process" src="https://github.com/user-attachments/assets/5ecd45b8-f681-488c-998b-0da5551cb508" />
+
+*Figure: sysmon eventid3 process*
 
 ---
 
@@ -151,6 +160,7 @@ Confirmed successful ingestion of Windows endpoint telemetry into Splunk Enterpr
 
 <img width="1462" height="822" alt="splunk endpoint validation2" src="https://github.com/user-attachments/assets/0ad7acb5-75ca-4b38-99e7-79bedcc3e375" />
 
+*Figure: splunk endpoint validation*
 
 ---
 
@@ -159,6 +169,8 @@ Confirmed successful ingestion of Windows endpoint telemetry into Splunk Enterpr
 Validated ingestion of Windows Security logs including authentication-related events and credential activity from the Active Directory environment.
 
 <img width="1462" height="822" alt="splunk endpoint validation" src="https://github.com/user-attachments/assets/e0ea85ce-ce0c-44a8-be93-7b386173f21c" />
+
+*Figure: splunk endpoint validation*
 
 ---
 
@@ -175,6 +187,8 @@ index=endpoint
 
 <img width="1280" height="720" alt="splunk endpoint valdation users" src="https://github.com/user-attachments/assets/23cba9d6-91c5-4662-8f73-fac9ce15d800" />
 
+*Figure: splunk endpoint validation users*
+
 ---
 
 # 5. Windows Forwarding Validation
@@ -187,6 +201,7 @@ This confirmed that the Universal Forwarder was successfully communicating with 
 
 <img width="1462" height="822" alt="splunk port validation" src="https://github.com/user-attachments/assets/1d1e1a08-4181-42b6-b08b-880e7a0aefdc" />
 
+*Figure: Validate splunk server on port 9997*
 
 ---
 
@@ -204,6 +219,8 @@ logger "Test syslog message from Ubuntu server"
 
 <img width="1920" height="1080" alt="syslog validation" src="https://github.com/user-attachments/assets/a64db373-8141-49b9-9c5a-73b86feb96eb" />
 
+*Figure: validate live syslog monitoring*
+
 ---
 
 ## Splunk Forwarder Status on Ubuntu
@@ -211,6 +228,8 @@ logger "Test syslog message from Ubuntu server"
 Validated that the Splunk Universal Forwarder was actively running on the Ubuntu Linux endpoint.
 
 <img width="1919" height="1200" alt="splunk active in ubuntu" src="https://github.com/user-attachments/assets/064e7d5d-d725-4ce0-a2ac-d85852cf48f0" />
+
+*Figure: Validate splunk universal forwarder on ubuntu*
 
 ---
 
@@ -220,6 +239,8 @@ Validated active network communication between the Ubuntu server and Splunk SIEM
 
 <img width="1919" height="1200" alt="splunk port validation_ubuntu" src="https://github.com/user-attachments/assets/541730be-1432-48dd-b73e-0a3027917a0d" />
 
+*Figure: Validate splunk server on port 9997*
+
 ---
 
 ## Linux Syslog Events Inside Splunk
@@ -228,6 +249,7 @@ Confirmed successful ingestion of Linux syslog events into Splunk Enterprise fro
 
 <img width="1280" height="720" alt="splunk syslog validation" src="https://github.com/user-attachments/assets/87302dc0-d6ce-4d00-995f-4eb17be1918c" />
 
+*Figure: Validate successful ingestion of linux syslog events*
 
 ---
 
